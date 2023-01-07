@@ -17,7 +17,7 @@ fit_verbosity = 1
 
 #from google.colab import files
 #uploaded = files.upload ()
-data = pd.read_csv(r'C:/Users/mehdi/Desktop/ApprentissageavancéTP/BostonHousing.csv', header=0)
+data = pd.read_csv(r'%PATH TO%BostonHousing.csv', header=0)
 display(data.head(5).style.format("{0:.2f}").set_caption("Quelques lignes du dataset :"))
 print('Données manquantes : ',data.isna().sum().sum(), '  la taille est : ', data.shape)
 
